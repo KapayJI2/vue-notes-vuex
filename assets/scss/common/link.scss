@@ -1,0 +1,27 @@
+.link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: $purple-color;
+  &:hover {
+    text-decoration: none;
+  }
+  &.isWhite {
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+  }
+  &.isFalse {
+    border-bottom: 1px solid $danger-color;
+    color: $danger-color;
+  }
+  &.isTrue {
+    border-bottom: 1px solid $success-color;
+    color: $success-color;
+  }
+  // active link
+  &.isActive,
+  &.router-link-active,
+  &.router-link-exact-active {
+    color: $purple-color-100;
+    text-decoration: underline;
+  }
+}
