@@ -1,9 +1,8 @@
 import {
   createRouter,
   createWebHistory,
-  createWebHashHistory,
 } from "vue-router";
-const routerHistory = createWebHistory();
+const routerHistory = createWebHistory("/vue-notes-vuex");
 import HomePage from "@/pages/Home";
 import AboutPage from "@/pages/About";
 import Page404 from "@/pages/404";
